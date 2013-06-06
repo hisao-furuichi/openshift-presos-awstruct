@@ -25,7 +25,7 @@ else
   
   echo "  * Installing awestruct"
 
-	gem insall tilt --no-ri --no-rdoc
+	gem install tilt --no-ri --no-rdoc
   gem install awestruct --no-ri --no-rdoc
 
 fi
