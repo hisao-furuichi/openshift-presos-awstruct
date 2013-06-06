@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Red Hat JBoss Developer Program</title>
+    <meta content="Some witty description" name="description">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="http://localhost:4242/css/reveal.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="http://localhost:4242/css/redhat.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:4242/css/theme/red.css" id="theme" rel="stylesheet" type="text/css">
+    <link href="http://localhost:4242/css/theme/multi.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost:4242/lib/css/zenburn.css" rel="stylesheet">
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="redhat-box">
+      <div class="redhat-shadowman-logo"></div>
+      <div class="redhat-hashtag">
+        &#35;rhsummit
+      </div>
+      <div class="redhat-hashtag">
+        &#35;redhat
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="slides">
+        <section class="title" data-state="intro">
+          <div class="title-information">
+            <h2 class="invert">JBoss Adventures in Chicago</h2>
+            <h5></h5>
+          </div>
+          <div class="title-author">
+            Eric D. Schabell
+            <br>
+              JBoss Technology Evangelist (Integration & BPM)
+            </br>
+            <a href="http://twitter.com/ericschabell">@ericschabell</a>
+          </div>
+        </section>
+        <section data-state="starry-night">
+          <h2 class="invert">Your Topics</h2>
+          <div style="color:white;">
+            <ul>
+            <li>What to expect with JBoss BRMS / BPM Suite v6</li>
+            <li>JBoss Fuse, JBoss A-MQ, SOA-P (JBoss Fuse Service Works)
+            
+            <ul>
+            <li>how does it all fit together?</li>
+            </ul></li>
+            <li>If you learn only one new produt this year?
+            
+            <ul>
+            <li>is should be X and here is why...</li>
+            </ul></li>
+            </ul>
+          </div>
+        </section>
+        <section class="title" data-state="flowers">
+          <div class="title-information">
+            <h2>Questions</h2>
+            <h4>or</h4>
+            <h2>Comments?</h2>
+            <h5></h5>
+          </div>
+          <div class="title-author">
+            Eric D. Schabell
+            <br>
+              JBoss Technology Evangelist (Integration & BPM)
+            </br>
+            <a href="http://twitter.com/ericschabell">@ericschabell</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="http://localhost:4242/lib/js/head.min.js"></script>
+    <script src="http://localhost:4242/js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+      
+          // The "normal" size of the presentation, aspect ratio will be preserved
+          // when the presentation is scaled to fit different resolutions. Can be
+          // specified using percentage units.
+          width: 1024,
+          height: 768,
+      
+      
+      
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+      
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+              { src: "http://localhost:4242/lib/js/classList.js", condition: function() { return !document.body.classList; } },
+              { src: "http://localhost:4242/plugin/markdown/showdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: "http://localhost:4242/plugin/markdown/markdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: "http://localhost:4242/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: "http://localhost:4242/plugin/zoom-js/zoom.js", async: true, condition: function() { return !!document.body.classList; } },
+              { src: "http://localhost:4242/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
+      
+              // { src: "http://localhost:4242/plugin/search/search.js", async: true, condition: function() { return !!document.body.classList; } }
+              // { src: "http://localhost:4242/plugin/remotes/remotes.js", async: true, condition: function() { return !!document.body.classList; } }
+      
+          ]
+      });
+    </script>
+  </body>
+</html>
