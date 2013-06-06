@@ -6,11 +6,11 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    <link href="http://localhost:4242/css/reveal.css" media="screen, projection" rel="stylesheet" type="text/css">
-    <link href="http://localhost:4242/css/redhat.css" rel="stylesheet" type="text/css">
-    <link href="http://localhost:4242/css/theme/judcon.css" id="theme" rel="stylesheet" type="text/css">
-    <link href="http://localhost:4242/css/theme/multi.css" rel="stylesheet" type="text/css">
-    <link href="http://localhost:4242/lib/css/zenburn.css" rel="stylesheet">
+    <link href="css/reveal.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="css/redhat.css" rel="stylesheet" type="text/css">
+    <link href="css/theme/judcon.css" id="theme" rel="stylesheet" type="text/css">
+    <link href="css/theme/multi.css" rel="stylesheet" type="text/css">
+    <link href="lib/css/zenburn.css" rel="stylesheet">
     <script>
       document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
@@ -60,8 +60,8 @@
         </section>
       </div>
     </div>
-    <script src="http://localhost:4242/lib/js/head.min.js"></script>
-    <script src="http://localhost:4242/js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
     <script>
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
@@ -84,15 +84,15 @@
       
           // Optional libraries used to extend on reveal.js
           dependencies: [
-              { src: "http://localhost:4242/lib/js/classList.js", condition: function() { return !document.body.classList; } },
-              { src: "http://localhost:4242/plugin/markdown/showdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: "http://localhost:4242/plugin/markdown/markdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: "http://localhost:4242/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-              { src: "http://localhost:4242/plugin/zoom-js/zoom.js", async: true, condition: function() { return !!document.body.classList; } },
-              { src: "http://localhost:4242/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
+              { src: "lib/js/classList.js", condition: function() { return !document.body.classList; } },
+              { src: "plugin/markdown/showdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: "plugin/markdown/markdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: "plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: "plugin/zoom-js/zoom.js", async: true, condition: function() { return !!document.body.classList; } },
+              { src: "plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
       
-              // { src: "http://localhost:4242/plugin/search/search.js", async: true, condition: function() { return !!document.body.classList; } }
-              // { src: "http://localhost:4242/plugin/remotes/remotes.js", async: true, condition: function() { return !!document.body.classList; } }
+              // { src: "plugin/search/search.js", async: true, condition: function() { return !!document.body.classList; } }
+              // { src: "plugin/remotes/remotes.js", async: true, condition: function() { return !!document.body.classList; } }
       
           ]
       });
