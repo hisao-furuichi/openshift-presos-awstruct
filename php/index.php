@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Welcome to OpenShift</title>
+  <title>Eric D. Schabell</title>
   <style>
   html { 
   background: black; 
@@ -122,34 +122,17 @@
     <div class="brand-text"><strong>Open</strong>Shift</div>
   </a>
   <h1>
-    Welcome to OpenShift
+    Welcome to all slides from Eric D. Schabell.
   </h1>
-  <p>
-    Place your application here
-  </p>
-  <p>
-    In order to commit to your new project, go to your projects git repo (created with the rhc app create command).  Make your changes, then run:
-  </p>
-  <pre>
-    git commit -a -m 'Some commit message'
-    git push
-  </pre>
-  <p>
-    Then reload this page.
-  </p>
-  
-  <h2>
-    What's next?
-  </h2>
   <ul>
     <li>
-      Why not visit us at <a href="http://www.openshift.com">http://www.openshift.com</a>, or
+      <a href="eric_live_chicago.html" target="_blank">Adventures in Chicago.</a>
     </li>
     <li>
-      You could get help in the <a href="http://www.openshift.com/forums/openshift">OpenShift forums</a>, or
+      <a href="judcon2013_rockstar.html" target="_blank">You want to be a JBoss Rock Star?</a>
     </li>
     <li>
-      You're welcome to come chat with us in our IRC channel at #openshift on freenode.net
+      <a href="eric_live_chicago.html" target="_blank"></a>
     </li>
   </ul>
 </body>
