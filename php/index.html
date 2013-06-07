@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Red Hat JBoss Integration BPM</title>
+    <meta content="My presentations on all things Ingetration and BPM" name="description">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="http://presos-onthe.rhcloud.com/css/reveal.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="http://presos-onthe.rhcloud.com/css/redhat.css" rel="stylesheet" type="text/css">
+    <link href="http://presos-onthe.rhcloud.com/css/theme/red.css" id="theme" rel="stylesheet" type="text/css">
+    <link href="http://presos-onthe.rhcloud.com/css/theme/multi.css" rel="stylesheet" type="text/css">
+    <link href="http://presos-onthe.rhcloud.com/lib/css/zenburn.css" rel="stylesheet">
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="redhat-box">
+      <div class="redhat-shadowman-logo"></div>
+      <div class="redhat-hashtag"></div>
+      <div class="redhat-hashtag"></div>
+    </div>
+    <div class="reveal">
+      <div class="slides">
+        <section class="title" data-state="intro">
+          <div class="title-information">
+            <h2 class="invert">Red Hat JBoss Developer Program</h2>
+            <h5></h5>
+          </div>
+          <div class="title-author">
+            Ray Ploski
+            <br>
+              Director, Developer Program & Strategy
+            </br>
+            <a href="http://twitter.com/rayploski">@rayploski</a>
+          </div>
+        </section>
+        <section class="title" data-state="orange-basic">
+          <ul>
+          <li>This is a list</li>
+          <li>Here is another bullet</li>
+          <li>yet another</li>
+          </ul>
+        </section>
+        <section data-state="blue-basic">
+          <h2>This is a Heading2</h2>
+          <h2>This is Heading2</h2>
+          <h3>This is Heading3</h3>
+          <h4>This is Heading4</h4>
+          <h5>This is Heading5</h5>
+        </section>
+        <section data-state="blue-text"></section>
+        <section data-state="green-basic">
+          <h2>This is Heading2</h2>
+          <h3>This is Heading3</h3>
+          <h4>This is Heading4</h4>
+          <h5>This is Heading5</h5>
+        </section>
+        <section data-state="green-text"></section>
+        <section data-state="orange-basic">
+          <h2>This is Heading2</h2>
+          <h3>This is Heading3</h3>
+          <h4>This is Heading4</h4>
+          <h5>This is Heading5</h5>
+        </section>
+        <section data-state="orange-text"></section>
+        <section data-state="grey-basic">
+          <h2>This is Heading2</h2>
+          <h3>This is Heading3</h3>
+          <h4>This is Heading4</h4>
+          <h5>This is Heading5</h5>
+        </section>
+        <section data-state="grey-text"></section>
+        <section data-state="white-basic">
+          <h2>This is Heading2</h2>
+          <h3>This is Heading3</h3>
+          <h4>This is Heading4</h4>
+          <h5>This is Heading5</h5>
+        </section>
+        <section data-state="flowers">
+          <h2>JBOSS AS GETS A NEW NAME</h2>
+        </section>
+        <section>
+          <section>
+            <h3>JBoss AS Gets a New Name</h3>
+            <a href="http://www.wildfly.org" target="_blank">
+              <img class="clean" src="http://presos-onthe.rhcloud.com/images/wildfly_logo_600px.png">
+            </a>
+          </section>
+          <section>
+            <h3>Why?</h3>
+            <h5>TO REDUCE CONFUSION</h5>
+            <ul class="fragment">
+              <li>Previously JBoss Meant:</li>
+              <ol>
+                <li class="fragment">A Project</li>
+                <li class="fragment">A Community</li>
+                <li class="fragment">A Product Line</li>
+              </ol>
+            </ul>
+          </section>
+          <section>
+            <h3>What Changes?</h3>
+            <ul>
+              <li>Project Name</li>
+              <li>IRC, Forums, Issue Tracker</li>
+              <li>Faster Release Cadence</li>
+            </ul>
+          </section>
+          <section>
+            <h3>What Stays the Same?</h3>
+            <ul>
+              <li>Red Hat's Commitment to Open Source</li>
+              <li>Project Governance</li>
+              <li>Codebase, community</li>
+              <li>
+                <term>JBoss</term>
+                remains with product line
+              </li>
+            </ul>
+            <br>
+            <br>
+            <img class="clean fragment" src="http://presos-onthe.rhcloud.com/images/rhjb-logotype.png">
+          </section>
+          <section>
+            <h3>The Process</h3>
+            <p>Community nominated names, community based election</p>
+            <ul>
+              <li>1000+ Suggestions</li>
+              <li>5 Finalists</li>
+              <li>Over 250,000 visits to the vote page in 6 weeks</li>
+            </ul>
+          </section>
+          <section>
+            <h3>What's New in WildFly 8?</h3>
+            <ul>
+              <li>Java EE 7</li>
+              <li>Much Faster</li>
+              <ul class="fragment">
+                <li>JPA and Hibernate Performance Improvements</li>
+                <ul class="fragment">
+                  <li>Significant speed boosts</li>
+                  <li>Expect SpecJ metrics</li>
+                </ul>
+                <li>Undertow</li>
+                <ul class="fragment">
+                  <li>Non-blocking web server with a Servlet implementation</li>
+                  <li>Fast implementation</li>
+                  <li>HTTP Upgrade Support - multiplexing</li>
+                  <li>Enhanced Security Configuration</li>
+                </ul>
+              </ul>
+            </ul>
+            <aside class="notes">
+              Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+            </aside>
+          </section>
+          <section>
+            <h3>WildFly 8 implements Java EE 7</h3>
+            <ul>
+              <li>
+                Concurrency Utilities for Java EE 1.0
+                <bold>(New to JEE!)</bold>
+              </li>
+              <li>Java Persistence 2.1</li>
+              <li>JAX-RS: The Java API for RESTful Web Services 2.0</li>
+              <li>Java Servlet 3.1</li>
+              <li>Java Message Service 2.0</li>
+              <li>Enterprise JavaBeans 3.2</li>
+              <li>Contexts and Dependency Injection 1.1</li>
+              <li>Bean Validation 1.1</li>
+              <li>
+                Batch Applications for the Java Platform
+                <bold>(New to JEE!)</bold>
+              </li>
+              <li>
+                Java API for JSON Processing 1.0
+                <bold>(New to JEE!)</bold>
+              </li>
+              <li>
+                Java API for WebSocket 1.0
+                <bold>(New to JEE!)</bold>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- Example of nested vertical slides -->
+        <section data-state="starry-night">
+          <h2 class="invert">RED HAT JBOSS</h2>
+          <h3 class="invert">DEVELOPER PROGRAM</h3>
+        </section>
+        <section>
+          <section>
+            <h4>Red Hat JBoss Developer Program</h4>
+            <ul>
+              <li>
+                Allows enterprise developers to access
+                <ul>
+                  <li>
+                    Enterprise
+                    <strong>binaries</strong>
+                    to JBoss Platforms
+                  </li>
+                  <li>
+                    Enterprise
+                    <strong>developer forums</strong>
+                  </li>
+                  <li>
+                    Exclusive
+                    <strong>Content</strong>
+                    webinars, quickstarts and more
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Free of Charge!
+                <ul>
+                  <li>
+                    Sign up at
+                    <a href="http://www.jboss.org">jboss.org</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <small>
+                  Focused on developers being as productive as possible at building new applications on Red Hat JBoss Middleware
+                </small>
+                <ul>
+                  <li>
+                    Program intended for
+                    <i>development purposes only.</i>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>Dev Program - Benefits</h4>
+            <ul>
+              <li>
+                <strong>Access to Enterprise Binaries</strong>
+              </li>
+              <ul>
+                <li>Build your apps on stable and certified codebase</li>
+                <li>No need to migrate your applications from Community</li>
+              </ul>
+              <li>
+                <strong>Access to Enterprise Developer Forums</strong>
+                <ul>
+                  <li>Collaborate with Red Hat experts and other enterprise developers.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Exclusive Enterprise Content</strong>
+                <ul>
+                  <li>Quickstarts, tutorials and webinars available only to Developer Program members.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>Dev Program - The Fine Print</h4>
+            <ul>
+              <li>
+                <strong>Intended for Developer Use Only</strong>
+              </li>
+              <ul>
+                <li>Obligated to purchase one or more subscriptions if used outside of local development.</li>
+              </ul>
+              <li>
+                <strong>No support or maintenance</strong>
+                <ul>
+                  <li>Major (x.0) and Minor (6.x) releases available with a developer subscription</li>
+                  <li>
+                    Micro (6.1.x) and Security Errata available
+                    <span style="color:red">only</span>
+                    to commercial subscribers.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Forums focused on development related topics</strong>
+                <ul>
+                  <li>No answers for production-focused topics</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section data-state="hills">
+          <h2>RELEASE CYCLE CHANGES</h2>
+        </section>
+        <section>
+          <h4>Community and Enterprise Delta</h4>
+          <img src="http://presos-onthe.rhcloud.com/images/release-cycle.png">
+        </section>
+        <section>
+          <h2>Links</h2>
+          <ul>
+            <li>
+              <a href="https://docspace.corp.redhat.com/groups/goldengate">Golden Gate Docspace</a>
+            </li>
+            <li>
+              <a href="https://docspace.corp.redhat.com/docs/DOC-142762">Customer-Facing Slides</a>
+            </li>
+            <li>
+              Questions?  Email - Ray Ploski
+              <a href="mailto:ray@redhat.com">(ray@redhat.com)</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="http://presos-onthe.rhcloud.com/lib/js/head.min.js"></script>
+    <script src="http://presos-onthe.rhcloud.com/js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+      
+          // The "normal" size of the presentation, aspect ratio will be preserved
+          // when the presentation is scaled to fit different resolutions. Can be
+          // specified using percentage units.
+          width: 1024,
+          height: 768,
+      
+      
+      
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+      
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+              { src: "http://presos-onthe.rhcloud.com/lib/js/classList.js", condition: function() { return !document.body.classList; } },
+              { src: "http://presos-onthe.rhcloud.com/plugin/markdown/showdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: "http://presos-onthe.rhcloud.com/plugin/markdown/markdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: "http://presos-onthe.rhcloud.com/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: "http://presos-onthe.rhcloud.com/plugin/zoom-js/zoom.js", async: true, condition: function() { return !!document.body.classList; } },
+              { src: "http://presos-onthe.rhcloud.com/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
+      
+              // { src: "http://presos-onthe.rhcloud.com/plugin/search/search.js", async: true, condition: function() { return !!document.body.classList; } }
+              // { src: "http://presos-onthe.rhcloud.com/plugin/remotes/remotes.js", async: true, condition: function() { return !!document.body.classList; } }
+      
+          ]
+      });
+    </script>
+  </body>
+</html>
