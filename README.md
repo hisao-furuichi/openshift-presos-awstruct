@@ -1,45 +1,39 @@
-# Awestruct for OpenShift
+How to run Awestruct Presentation Hostin on OpenShift
+======================================================
 
-Template for running awestruct on OpenShift.
+This will give you an empty PHP setup on OpenShift for hosting your presentations on an Awestruct site.
 
-## Status
-
-Work in progress, please report issues.
-
-## Installation
+Installation
+------------
 
 Create OpenShift application
 
-    rhc app create -a $name -t php-5.3
+    rhc app create -a presos -t php-5.3 --from-code git://github.com/openshift-presos-awestruct.git
 
-and enter the directory
+now build your presentation using Awestruct. Once done, copy the _site directory to your OpenShift instance.
 
-    cd $name
+    cp -rv  $project/_site presos/php
 
-Add this repository as new remote
+To deploy to OpenShift just commit and push
 
-    git remote add template -m master git://github.com/openshift-quickstart/awestruct-openshift-quickstart.git
+    git add presos/php/*
 
-and pull locally
-
-    git pull -s recursive -X theirs template master
-
-now build your application using Awestruct.
-
-To deploy to OpenShift just push
+    git co -a
 
     git push origin master
 
-Now, your application is available at
+If you add an index.html file with the links to each presentation you have installed on the site, then you can find them here
 
-    http://$name-$namespace.rhcloud.com
+    http://presos-$namespace.rhcloud.com
 
-## What it does?
+What is this project doing?
+---------------------------
 
-* Install awestruct if not available
-* Update awestruct when already available
+* Install awestruct if not available (ruby gems)
+* Update awestruct when already available (ruby gems)
 * Generate the site to static files
 
-## Tools
+Releases
+--------
 
-* Awestruct
+- v0.1 - initial setup.
