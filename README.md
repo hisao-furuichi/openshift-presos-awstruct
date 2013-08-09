@@ -18,16 +18,6 @@ To deploy to OpenShift just commit and push
 
     git add presos/php/*
 
-=======
-
-now build your presentation using Awestruct. Once done, copy the _site directory to your OpenShift instance.
-
-    cp -rv  $project/_site presos/php
-
-To deploy to OpenShift just commit and push
-
-    git add presos/php/*
-
     git co -a
 
     git push origin master
@@ -43,7 +33,6 @@ What is this project doing?
 * Update awestruct when already available (ruby gems)
 * Generate the site to static files
 
-=======
 Releases
 --------
 
