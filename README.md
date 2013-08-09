@@ -1,4 +1,4 @@
-How to run Awestruct Presentation Hostin on OpenShift
+How to run Awestruct Presentation Hosting on OpenShift
 ======================================================
 
 This will give you an empty PHP setup on OpenShift for hosting your presentations on an Awestruct site.
