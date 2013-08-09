@@ -36,4 +36,6 @@ What is this project doing?
 Releases
 --------
 
+- v0.2 - build script adjusted to add missing deps in new OpenShift cartridge setup.
+
 - v0.1 - initial setup.
