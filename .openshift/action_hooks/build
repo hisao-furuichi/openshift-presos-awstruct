@@ -30,13 +30,41 @@ else
 
 fi
 
+if gem list | grep coffee-script
+then
+  echo "  *  coffee-script installed"
+else
+  echo "  * Installing coffee-script"
+  gem install coffee-script --no-ri --no-rdoc
+  gem cleanup
+fi
+ 
+if gem list | grep redcarpet
+then
+  echo "  *  redcarpet installed"
+else
+  echo "  *  installing redcarpet "
+  gem install -v 2.3.0 redcarpet --no-ri --no-rdoc
+  gem cleanup
+
+fi
+
+if gem list | grep htmlcompressor
+then
+  echo "  * htmlcompressor installed"
+else
+  echo "  * Installing htmlcompressor"
+  gem install htmlcompressor --no-ri --no-rdoc
+  gem cleanup
+fi
+
 export PATH=$GEM_PATH/bin:$PATH
 
-echo "* Generating site"
+#echo "* Generating site"
 
-awestruct -P production -g
+#awestruct -P production -g
 
-mkdir -p ${OPENSHIFT_REPO_DIR}php
-mv _site/* ${OPENSHIFT_REPO_DIR}php
+#mkdir -p ${OPENSHIFT_REPO_DIR}php
+#mv _site/* ${OPENSHIFT_REPO_DIR}php
 
 echo "* Done"
