@@ -8,7 +8,7 @@ Installation
 
 Create OpenShift application
 
-    rhc app create -a presos -t php-5.3 --from-code git://github.com/eschabell/openshift-presos-awestruct.git
+    rhc app create -a presos -t php-5.3 --from-code https://github.com/eschabell/openshift-presos-awstruct.git
 
 now build your presentation using Awestruct. Once done, copy the _site directory to your OpenShift instance.
 
