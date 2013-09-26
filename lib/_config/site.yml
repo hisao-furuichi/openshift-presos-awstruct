@@ -1,0 +1,10 @@
+# author is used in the atom feed
+title: Red Hat JBoss Integration BPM
+author: Eric D. Schabell
+description: My presentations on all things Ingetration and BPM
+
+profiles:
+  development:
+    base_url: http://localhost:4242
+  production:
+    base_url: http://presos-onthe.rhcloud.com
