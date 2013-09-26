@@ -4,7 +4,7 @@
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
 
-cd ${OPENSHIFT_REPO_DIR}libs
+cd ${OPENSHIFT_REPO_DIR}lib
 
 mkdir -p ${OPENSHIFT_DATA_DIR}gems
 
@@ -15,56 +15,76 @@ echo "* Setting up environment"
 
 if gem list | grep awestruct
 then
-  
-  echo "  * Check for new Awestruct version"
 
-  gem update awestruct --no-ri --no-rdoc
-  gem cleanup
+  echo "  * Awestruct previously installed"
+
+  #echo "  * Check for new Awestruct version"
+
+  #gem update --no-ri --no-rdoc
 
 else
-  
+
   echo "  * Installing awestruct"
 
-	gem install tilt --no-ri --no-rdoc
   gem install awestruct --no-ri --no-rdoc
 
 fi
 
 if gem list | grep coffee-script
 then
-  echo "  *  coffee-script installed"
+	echo "  *  coffee-script installed"
 else
-  echo "  * Installing coffee-script"
-  gem install coffee-script --no-ri --no-rdoc
-  gem cleanup
+	echo "  * Installing coffee-script"
+	gem install coffee-script --no-ri --no-rdoc
+	gem cleanup
 fi
- 
+				 
 if gem list | grep redcarpet
 then
-  echo "  *  redcarpet installed"
+	echo "  *  redcarpet installed"
 else
-  echo "  *  installing redcarpet "
-  gem install -v 2.3.0 redcarpet --no-ri --no-rdoc
-  gem cleanup
-
+	echo "  *  installing redcarpet "
+	gem install -v 2.3.0 redcarpet --no-ri --no-rdoc
+	gem cleanup
 fi
 
 if gem list | grep htmlcompressor
 then
-  echo "  * htmlcompressor installed"
+	echo "  * htmlcompressor installed"
 else
-  echo "  * Installing htmlcompressor"
-  gem install htmlcompressor --no-ri --no-rdoc
-  gem cleanup
+	echo "  * Installing htmlcompressor"
+	gem install htmlcompressor --no-ri --no-rdoc
+	gem cleanup
 fi
+
+if gem list | grep minify
+then
+	echo "  * minify installed"
+else
+	echo "  * Installing minify"
+	gem install minify --no-ri --no-rdoc
+	gem cleanup
+fi
+
+if gem list | grep uglifier
+then
+	echo "  * uglifier installed"
+else
+	echo "  * Installing uglifier"
+	gem install uglifier --no-ri --no-rdoc
+	gem cleanup
+fi
+
+
 
 export PATH=$GEM_PATH/bin:$PATH
 
-#echo "* Generating site"
+echo "* Generating site"
 
-#awestruct -P production -g
+awestruct -P production -g --force
 
-#mkdir -p ${OPENSHIFT_REPO_DIR}php
-#mv _site/* ${OPENSHIFT_REPO_DIR}php
+rm -rf ${OPENSHIFT_REPO_DIR}public
+mkdir -p ${OPENSHIFT_REPO_DIR}public
+mv _site/* ${OPENSHIFT_REPO_DIR}public
 
 echo "* Done"
