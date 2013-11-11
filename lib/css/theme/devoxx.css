@@ -1,0 +1,400 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Bangers|Press+Start+2P|Raleway+Dots|Vollkorn|Abril+Fatface);
+
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkred.
+ *
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: white;
+  background-color: white;
+
+}
+
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none; }
+
+
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: darkred;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #0000f1;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: darkred;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+
+.reveal section img.clean
+{
+    border: 0px;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: darkred; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: darkred; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: darkred; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: darkred; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: red; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: red; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: red; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: red; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: darkred;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.reveal
+{
+    background-image: url("/images/shadowman-logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.intro .reveal
+{
+    background-image: url("/images/RedConnections.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+.intro .reveal a:not(.image){
+    color: white;
+}
+
+.deal .reveal{
+
+    background-image: url("/images/deal.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+.curtains .reveal{
+
+    background-image: url("/images/curtains.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+.light .reveal{
+
+    background-image: url("/images/light.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+.cycling .reveal{
+
+    background-image: url("/images/cycling.jpg");
+    background-repeat:no-repeat;
+    background-position: top right;
+    background-size: 20%;
+
+}
+
+.brains .reveal{
+
+    background-image: url("/images/brains.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.dorking .reveal{
+
+    background-image: url("/images/dorking.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.never-look .reveal{
+
+    background-image: url("/images/never-look.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.webadmin .reveal{
+
+    background-image: url("/images/webadmin.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.cartridges .reveal{
+
+    background-image: url("/images/cartridges.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.instantapps .reveal{
+
+    background-image: url("/images/instantapps.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.featuredapps .reveal{
+
+    background-image: url("/images/featuredapp.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.jbossapp .reveal{
+
+    background-image: url("/images/jbossapp.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.readytocode .reveal{
+
+    background-image: url("/images/readytocode.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.devoxxapp .reveal{
+
+    background-image: url("/images/devoxxapp.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.workshop .reveal{
+
+    background-image: url("/images/workshop.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.configapp .reveal{
+
+    background-image: url("/images/configapp.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.easypeasy .reveal{
+
+    background-image: url("/images/easypeasy.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.buzz .reveal{
+
+    background-image: url("/images/buzz.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.gears .reveal{
+
+    background-image: url("/images/gears.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.createapps .reveal{
+
+    background-image: url("/images/createapps.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.dev-heaven .reveal{
+
+    background-image: url("/images/dev-heaven.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.hammers .reveal{
+
+    background-image: url("/images/hammers.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.project-template .reveal{
+
+    background-image: url("/images/project-template.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: auto;
+
+}
+
+.coffee .reveal{
+
+    background-image: url("/images/coffeebreak.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.default .reveal{
+
+    background-image: url("/images/jaxlondon.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+.title .reveal{
+
+    background-image: url("/images/devoxx-title.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: contain;
+
+}
+
+section.title
+{
+    background-size: 100% 100%;
+    vertical-align: middle;
+    color: white;
+
+}
+
+section.title .title-information
+{
+    color: #ffffff;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+section.title .title-author
+{
+    color:#000000;
+    text-align: left;
+    margin-left: 3em;
+}
+
+
+
