@@ -1,0 +1,126 @@
+---
+layout: jtebase
+---
+
+.slides
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 ラボ 01 - JBoss BRMSをインストール
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h2 ラボの目標
+      %h4 JBoss BRMSをインストールしてログイン
+
+
+  %section(data-state="cycling" )
+    .title-information
+      %h4 JBoss BRMSをインストール
+    :markdown
+      * プロジェクト(brms-install-demo)をクローン
+
+        `$ git clone https://github.com/eschabell/brms-install-demo.git`
+
+      * 製品を設置する。詳細はinstalls/README を参照
+
+        `$ cp jboss-eap-6.1.1.zip brms-install-demo/installs/`
+
+        `$ cp jboss-brms-6.0.1.GA-redhat-3-deployable-eap6.x.zip brms-install-demo/installs/`
+
+      * init.sh または init.bat を実行後、インストラクションに従いサーバーを起動
+
+        `./target/jboss-eap-6.1/bin/standalone.sh`
+
+  %section(data-state="brmsinstall" )
+    .title-information
+
+  %section(data-state="cycling" )
+    .title-information
+      %h4 JBoss BRMS Standalone の設定
+    :markdown
+      * プロパティを使い、gitリポジトリの場所を指定している
+
+      * standalone.xmlで確認
+
+        `$ cat brms-install-demo/support/standalone.xml`
+
+        `<property name="org.uberfire.nio.git.dir" value="${jboss.home.dir}/bin"/>`
+
+      * つまり、.niogit/*配下に保存されたすべてのプロジェクトは、以下のパスから確認できる:
+
+        `brms-install-demo/target/jboss-eap-6.1/bin/.niogit/`
+
+  %section(data-state="cycling" )
+    .title-information
+      %h4 JBoss BRMS ユーザーの設定
+    :markdown
+      * インストール時に、ユーザー情報は自動設定されている
+      * Supportディレクトリ配下にユーザー設定ファイルがある
+
+        `$ cat support/application-users.properties`
+
+        `$ cat support/application-roles.properties`
+
+      * インストール後のユーザー設定情報
+
+        `target/jboss-eap-6.1/standalone/configuration/`
+
+  %section(data-state="cycling" )
+    .title-information
+      %h4 JBoss BRMS で利用可能なユーザー
+    :markdown
+      * ユーザーは2種類にカテゴライズされる:
+        * admin - すべてのコンポーネントにアクセス可能
+        * analyst - analyst workbenchにアクセス可能
+
+      * Adminユーザー名とパスワード:
+
+        `erics  -  bpmsuite`
+
+      * Analystユーザー名とパスワード:
+
+        `mary  -  bpmsuite`
+
+        `alan  -  bpmsuite`
+
+        `bob  -  bpmsuite`
+
+  %section(data-state="cycling" )
+    .title-information
+      %h4 JBoss BRMS ダッシュボードにログイン
+    :markdown
+      * http://localhost:8080/business-central
+
+  %section(data-state="brmslogin" )
+    .title-information
+
+  %section(data-state="brmsdashboard" )
+    .title-information
+
+
+  %section(data-state="questions" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    :markdown
+      <div style="float: left">
+        <img height="100" width="700" src="/images/references.jpg" />
+      </div>
+      * JBoss BRMS & BPM Suite 記事
+        * <font size="5">[_http://schabell.org/search/label/BRMS_] (http://schabell.org/search/label/BRMS) - [_http://schabell.org/search/label/BPMS_] (http://schabell.org/search/label/BPMS)</font>
+      * JBoss BPM Suite デモ
+        * <font size="5">[_http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html_] (http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html_] (http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html_] (http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html)</font>
+        * <font size="5">[_https://github.com/eschabell/business-resource-optimizer-demo_] (https://github.com/eschabell/business-resource-optimizer-demo)</font>
+      * JBoss xPaaS デモ
+        * <font size="5">[_https://github.com/eschabell/bpms-bam-dashboard_] (https://github.com/eschabell/bpms-bam-dashboard)</font>
+        * <font size="5">[_https://github.com/eschabell/openshift-bpm-bam-dashboard_] (https://github.com/eschabell/openshift-bpm-bam-dashboard)</font>
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 JBoss Integration と BPM であなたのビジネスを自動化しましょう
+      %h5
+        :markdown
+          * Lab 02 は翻訳中です 
