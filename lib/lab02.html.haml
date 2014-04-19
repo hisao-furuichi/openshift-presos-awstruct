@@ -1,0 +1,216 @@
+---
+layout: jtebase
+---
+
+.slides
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 ラボ 02 - 新規プロジェクトを作成
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h2 ラボの目標
+      %h4 JBoss BRMS workbenchで新規プロジェクトを作成
+
+  %section(data-state="" )
+    .title-information
+      %h4 ヘルプ/早送り
+    :markdown
+      * もし作業が進まない場合、すべてのアセットが含まれたgit リポジトリを公開しています
+      * ダウンロード: [coolstore-demo.git.zip] (coolstore-demo.git.zip)
+      * ダウンロードしたリポジトリーを解凍
+      * メインメニューで、`オーサリング -> 管理`を選択
+      * その後、`リポジトリー -> リポジトリをクローン`を選択
+      * ポップアップウインドウに、下記データを入力:
+        * `Repository name: coolstore-demo`
+        * `Organizational unit: Demos`
+        * `Git URL: file:///{path-to-unzipped}/coolstore-demo.git`
+
+  %section(data-state="fastforward" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+      %h4 JBoss BRMS structure
+    :markdown
+      * JBoss BRMS のアセット構成は以下のようになります (図の上から順に):
+        * 組織
+        * リポジトリ
+        * プロジェクト
+        * パッケージ
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image04.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 組織単位を作成
+    :markdown
+      * ログイン後、管理パースペクティブに移動:
+
+        `オーサリング -> 管理`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image05.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 組織単位を追加
+    :markdown
+      * 新規単位を追加する為、組織単位を管理します:                      :
+
+        `組織単位 -> 組織単位の管理`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image06.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 組織単位を追加
+    :markdown
+      * 新規組織を開設する為の追加ボタン:
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image07.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 組織単位を追加
+    :markdown
+      * 詳細を入力
+        * `OK`をクリック
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image08.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規リポジトリの作成
+    :markdown
+      * リポジトリをクローンするか作成する必要があります
+      * JBoss BRMS はリポジトリ機構にgitを利用しています
+        * 既存のgitリポジトリをクローンすることが可能
+        * 新しくリポジトリを作成することも可能
+      * 今回のラボでは、新規にリポジトリを作成します
+        * リテーラー用アプリケーションを作成
+        * Cool Store オンラインウェブショップ
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規リポジトリの作成
+    :markdown
+      * 先程作成した組織単位に新規リポジトリを追加:
+
+        `リポジトリー -> 新規リポジトリー`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image10.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規リポジトリの作成
+    :markdown
+      * 詳細を入力
+        * `CREATE`をクリック
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image11.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規リポジトリの作成
+    :markdown
+      * リポジトリの作成完了を通知するポップアップが表示されます
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image12.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規プロジェクトの作成
+    :markdown
+      * プロジェクトはビジネスルールアセッットにとって、メインの組織的デプロイメント単位となる
+      * プロジェクトはmavenプロジェクトのように構成される
+        * デプロイ時、mavenアーティファクトのようにデプロイされる (jarとpom)
+        * デプロイ時、mavenリポジトリに格納される
+        * デフォルトでは、BRMSが利用する内部リポジトリ
+          * アプリケーションに組み込まれる準備が整う
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規プロジェクトの作成
+    :markdown
+      * プロジェクトオーサリングパースペクティブを表示
+
+        `オーサリング -> プロジェクトオーサリング`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image13.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規プロジェクトの作成
+    :markdown
+      * 新規プロジェクトを作る
+
+        `新しいアイテム -> プロジェクト`
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image14.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規プロジェクトの作成
+    :markdown
+      * 詳細を入力
+        * `OK`をクリック
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image15.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+      %h4 新規プロジェクトの作成
+    :markdown
+      * 詳細を入力し、`FINISH`をクリック
+
+      <div style="float: right">
+        <img src="/images/brms_bpms_workshop/image16.png" />
+      </div>
+
+  %section(data-state="projectcreated" )
+    .title-information
+
+  %section(data-state="questions" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    :markdown
+      <div style="float: left">
+        <img height="100" width="700" src="/images/references.jpg" />
+      </div>
+      * JBoss BRMS & BPM Suite 記事
+        * <font size="5">[_http://schabell.org/search/label/BRMS_] (http://schabell.org/search/label/BRMS) - [_http://schabell.org/search/label/BPMS_] (http://schabell.org/search/label/BPMS)</font>
+      * JBoss BPM Suite デモ
+        * <font size="5">[_http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html_] (http://www.schabell.org/2013/10/jboss-bpm-suite-rocking-the-mortgage-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html_] (http://www.schabell.org/2013/11/jboss-bpm-suite-automated-lending-generic-loan-demo.html)</font>
+        * <font size="5">[_http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html_] (http://www.schabell.org/2013/12/bpms-examining-migrated-customer-evaluation-demo.html)</font>
+        * <font size="5">[_https://github.com/eschabell/business-resource-optimizer-demo_] (https://github.com/eschabell/business-resource-optimizer-demo)</font>
+      * JBoss xPaaS デモ
+        * <font size="5">[_https://github.com/eschabell/bpms-bam-dashboard_] (https://github.com/eschabell/bpms-bam-dashboard)</font>
+        * <font size="5">[_https://github.com/eschabell/openshift-bpm-bam-dashboard_] (https://github.com/eschabell/openshift-bpm-bam-dashboard)</font>
+
+  %section.title(data-state="cycling" )
+    .title-information
+      %h4 JBoss Integration と BPM であなたのビジネスを自動化しましょう
+      %h5
+        :markdown
+          * Lab03は翻訳中です
